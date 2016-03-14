@@ -1,4 +1,3 @@
-/* eslint no-use-before-define: [0] */
 import React, {PropTypes, Component} from 'react';
 import {
 	Dribbble,
