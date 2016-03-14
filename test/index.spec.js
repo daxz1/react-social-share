@@ -2,7 +2,7 @@ import React from 'react';
 import test from 'tape';
 import sinon from 'sinon';
 import * as icons from '../src/icons.js';
-import Icon, {Facebook} from '../src/index.js';
+import Icon from '../src/index.js';
 import {shallow} from 'enzyme';
 
 test('Icon', t => {
