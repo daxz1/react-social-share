@@ -11,9 +11,8 @@
 
 ***
 
-[![NPM version](http://img.shields.io/npm/v/react-socials.svg)](https://www.npmjs.org/package/react-socials)
-[![Travis Build Status](https://travis-ci.org/canvaskisa/react-socials.svg)](https://travis-ci.org/canvaskisa/react-socials)
-[![Coverage Status](https://coveralls.io/repos/github/canvaskisa/react-socials/badge.svg?branch=master)](https://coveralls.io/github/canvaskisa/react-socials?branch=master)
+[![NPM version](http://img.shields.io/npm/v/react-share-icons.svg)](https://www.npmjs.org/package/react-share-icons)
+[![Travis Build Status](https://travis-ci.org/canvaskisa/react-share-icons.svg)](https://travis-ci.org/canvaskisa/react-share-icons)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > Vector share icons as react-components
