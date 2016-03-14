@@ -23,7 +23,6 @@ $ npm install --save react-share-icons
 ```
 
 ## Usage
-### Icon: ReactElement
 ```js
 import React, {Component} from 'react';
 import Icon, {Telegram} from 'react-share-icons';
