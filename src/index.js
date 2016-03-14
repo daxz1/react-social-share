@@ -16,4 +16,5 @@ class Icon extends Component {
 	}
 }
 
+export * from './icons';
 export default Icon;
