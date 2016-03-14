@@ -23,6 +23,7 @@ $ npm install --save react-share-icons
 ```
 
 ## Usage
+##### Icon: ReactElement
 ```js
 import React, {Component} from 'react';
 import Icon, {Telegram} from 'react-share-icons';
@@ -63,6 +64,16 @@ All available icons:
 - Youtube
 - Telegram
 - Google
+
+##### Colors.css
+You can find [colors.css](colors.css) file in the root of the project, it provides css variables with social colors for you, so you can use [sheetify](https://github.com/sheetify/sheetify) or [cssnext](https://github.com/cssnext/cssnext):
+```css
+@import 'react-share-icons/colors';
+
+.shares-facebook {
+  color: var(--rsi-facebook);
+}
+```
 
 ## License
 MIT © [Aleksandr Yakunichev](https://github.com/canvaskisa)
