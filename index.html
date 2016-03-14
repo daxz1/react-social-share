@@ -40,18 +40,56 @@
 <p>Vector share icons as react-components</p>
 </blockquote>
 
-<p><img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Facebook/index.svg" alt="facebook"></p>
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
-<p><img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Facebook/index.svg" alt="Facebook">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Dribbble/index.svg" alt="Dribbble">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Instagram/index.svg" alt="Instagram">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Odnoklassniki/index.svg" alt="Odnoklassniki">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Periscope/index.svg" alt="Periscope">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Twitter/index.svg" alt="Twitter">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Vkontakte/index.svg" alt="Vkontakte">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Youtube/index.svg" alt="Youtube">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Telegram/index.svg" alt="Telegram">
-<img src="https://rawgit.com/canvaskisa/react-share-icons/master/src/Google/index.svg" alt="Google"></p>
+<div class="highlight highlight-source-js"><pre>$ npm install <span class="pl-k">--</span>save react<span class="pl-k">-</span>share<span class="pl-k">-</span>icons</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> <span class="pl-smi">React</span>, {<span class="pl-smi">Component</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> <span class="pl-smi">Icon</span>, {<span class="pl-smi">Telegram</span>} <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-share-icons<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span> <span class="pl-smi">Instagram</span> <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react-share-icons/lib/Instagram<span class="pl-pds">'</span></span>;
+
+<span class="pl-k">class</span> <span class="pl-en">Shares</span> <span class="pl-k">extends</span> <span class="pl-en">Component</span> {
+  <span class="pl-en">render</span>() {
+    <span class="pl-k">return</span> (
+      <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>
+          <span class="pl-k">&lt;</span>Icon type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Facebook<span class="pl-pds">"</span></span> className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>shares-facebook<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span>
+          <span class="pl-k">&lt;</span>Icon type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Twitter<span class="pl-pds">"</span></span> className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>shares-twitter<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span>
+          <span class="pl-k">&lt;</span>Instagram className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>shares-instagram<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+
+        <span class="pl-k">&lt;</span>a href<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>https://telegram.org/<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+          <span class="pl-k">&lt;</span>Telegram className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>shares-telegram<span class="pl-pds">"</span></span><span class="pl-k">/</span><span class="pl-k">&gt;</span>
+        <span class="pl-k">&lt;</span><span class="pl-k">/</span>a<span class="pl-k">&gt;</span>
+      <span class="pl-k">&lt;</span><span class="pl-k">/</span>div<span class="pl-k">&gt;</span>
+    );
+  }
+}
+
+<span class="pl-k">export</span> <span class="pl-v">default</span> <span class="pl-smi">Shares</span>;</pre></div>
+
+<p>By default <code>react-shares-icons</code> exports <code>Icon</code> component, which accepts <code>type</code> prop. <code>type</code> props is a string – name of the icon you wanna get. You can also import icons like this: <code>import {Facebook} from 'react-share-icons</code>.</p>
+
+<p>If you don't want to use all of the icons, you can import them directly like this: <code>import Facebook from 'react-share-icons/lib/Facebook'</code>, it will import only Facebook icon component, and nothing else!</p>
+
+<p>All available icons:</p>
+
+<ul>
+<li>Facebook</li>
+<li>Dribbble</li>
+<li>Instagram</li>
+<li>Odnoklassniki</li>
+<li>Periscope</li>
+<li>Twitter</li>
+<li>Vkontakte</li>
+<li>Youtube</li>
+<li>Telegram</li>
+<li>Google</li>
+</ul>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
