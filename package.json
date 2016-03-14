@@ -1,0 +1,64 @@
+{
+  "name": "react-share-icons",
+  "version": "0.0.0",
+  "description": "Vector share icons as react-components",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "test": "npm run lint && tape -r babel-core/register test/*.spec.js | tap-spec",
+    "clean": "rimraf lib .nyc_output",
+    "prepublish": "npm run clean && npm run build",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "lint": "xo"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "social",
+    "socials",
+    "icon",
+    "icons",
+    "share",
+    "svg",
+    "vector",
+    "scalable"
+  ],
+  "author": "canvaskisa <canvaskisa@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canvaskisa/react-socials.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "coveralls": "^2.11.8",
+    "enzyme": "^2.0.0",
+    "eslint": "^2.3.0",
+    "eslint-config-xo-react": "^0.5.0",
+    "eslint-plugin-react": "^4.2.0",
+    "nyc": "^6.0.0",
+    "react": "^0.14.7",
+    "react-addons-test-utils": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "rimraf": "^2.5.2",
+    "sinon": "^1.17.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1",
+    "webpack": "^1.12.14",
+    "xo": "^0.13.0"
+  },
+  "xo": {
+    "plugin": "react",
+    "extends": "xo-react",
+    "ignore": [
+      "lib/**/*.js"
+    ]
+  }
+}
