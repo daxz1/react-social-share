@@ -1,30 +1,18 @@
 import React from 'react';
 import test from 'tape';
 import sinon from 'sinon';
+import * as icons from '../src/icons.js';
 import Icon from '../src/index.js';
 import {shallow} from 'enzyme';
 
-const tests = {
-	facebook: 'Facebook',
-	vkontakte: 'Vkontakte',
-	twitter: 'Twitter',
-	dribbble: 'Dribbble',
-	google: 'Google',
-	instagram: 'Instagram',
-	odnoklassniki: 'Odnoklassniki',
-	periscope: 'Periscope',
-	telegram: 'Telegram',
-	youtube: 'Youtube'
-};
-
 test('Icon', t => {
-	Object.keys(tests).forEach(k => {
+	Object.keys(icons).forEach(k => {
 		const wrapper = shallow(<Icon type={k}/>);
 
 		t.is(
-			wrapper.find(tests[k]).length,
+			wrapper.find(icons[k]).length,
 			1,
-			`Must render "${tests[k]}" icon when "type" prop equals "${k}"`
+			`Must render "${icons[k].name}" icon when "type" prop equals "${k}"`
 		);
 	});
 

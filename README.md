@@ -3,10 +3,10 @@
 ![Instagram](https://rawgit.com/canvaskisa/react-share-icons/master/src/Instagram/index.svg)
 ![Odnoklassniki](https://rawgit.com/canvaskisa/react-share-icons/master/src/Odnoklassniki/index.svg)
 ![Periscope](https://rawgit.com/canvaskisa/react-share-icons/master/src/Periscope/index.svg)
-![Telegram](https://rawgit.com/canvaskisa/react-share-icons/master/src/Telegram/index.svg)
 ![Twitter](https://rawgit.com/canvaskisa/react-share-icons/master/src/Twitter/index.svg)
 ![Vkontakte](https://rawgit.com/canvaskisa/react-share-icons/master/src/Vkontakte/index.svg)
 ![Youtube](https://rawgit.com/canvaskisa/react-share-icons/master/src/Youtube/index.svg)
+![Telegram](https://rawgit.com/canvaskisa/react-share-icons/master/src/Telegram/index.svg)
 ![Google](https://rawgit.com/canvaskisa/react-share-icons/master/src/Google/index.svg)
 
 ***
