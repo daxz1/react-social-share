@@ -8,6 +8,7 @@
 ![Youtube](https://rawgit.com/canvaskisa/react-share-icons/master/src/Youtube/index.svg)
 ![Telegram](https://rawgit.com/canvaskisa/react-share-icons/master/src/Telegram/index.svg)
 ![Google](https://rawgit.com/canvaskisa/react-share-icons/master/src/Google/index.svg)
+![Whatsapp](https://rawgit.com/canvaskisa/react-share-icons/master/src/Whatsapp/index.svg)
 
 ***
 
@@ -64,6 +65,7 @@ All available icons:
 - Youtube
 - Telegram
 - Google
+- Whatsapp
 
 ##### Colors.css
 You can find [colors.css](colors.css) file in the root of the project, it provides css variables with social colors for you, so you can use [sheetify](https://github.com/sheetify/sheetify) or [cssnext](https://github.com/cssnext/cssnext):

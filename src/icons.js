@@ -8,3 +8,4 @@ export Telegram from './Telegram';
 export Twitter from './Twitter';
 export Vkontakte from './Vkontakte';
 export Youtube from './Youtube';
+export Whatsapp from './Whatsapp';
